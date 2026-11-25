@@ -3,27 +3,31 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Study Website</title>
+	<title>Study Website | Student Learning Resource Platform</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 </head>
 <body>
-	<header>
-		<h1 class="top">Study Hub</h1>
-		<p>Let's study together!</p>
+	<header class="site-header">
+		<h1 class="brand-name">Study Hub</h1>
+		<p class="brand-tag">Free learning resources for students</p>
 
 		<!-- Navigation Bar -->
 		<nav class="main-nav">
 		<ul>
 			<li><a href="#home">Home</a></li>
 			<li><a href="#courses">Courses</a></li>
-			<li><a href="#resourses">Resourses</a></li>
-			<li><a href="#announcement">Announcement</a></li>
+			<li><a href="#resources">Resources</a></li>
+			<li><a href="#announcement">Announcement</a>
+			</li>
+			<li><a href="#media">Watch &amp; listen</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 		</nav>
 	</header>
 
+<!-- Main content and sidebar layout -->
+<div class="content-layout">
 	<!-- Main Section -->
 	<main>
 		<!-- HOME -->
@@ -36,7 +40,7 @@
 		</section>
 
 		<!-- COURSES -->
-		<section class="block" id="course">
+		<section class="block" id="courses">
 			<h2>Featured Courses</h2>
 			<p>Each course has short modules you can finish in one sitting.</p>
 
@@ -52,16 +56,140 @@
 							<li>HTML</li>
 							<li>CSS</li>
 						</ul>
-						<a href="#resourses">Resources</a>
+						<a href="#resources">Resources</a>
 					</div>
 				</article>
-				
+
+				<article class="card">
+					<img src="JS.jpg" alt="JavaScript adds functionality.">
+					<div class="card-body">
+						<h3>JavaScript</h3>
+						<p>Learn how to make web pages interactive.</p>
+						<ul class="tags">
+							<li>Begginer</li>
+							<li>8 modules</li>
+							<li>JavaScript</li>
+						</ul>
+						<a href="#resources">Resources</a>
+					</div>
+				</article>
+
+				<article class="card">
+					<img src="Database.jpg" alt="Database cylinder drawn as stacked gold and coral discs">
+					<div class="card-body">
+						<h3>Database in Practice</h3>
+						<p>Design tables, write SQL queries and understand relationships.</p>
+						<ul class="tags">
+							<li>Begginer</li>
+							<li>8 modules</li>
+							<li>SQL</li>
+						</ul>
+						<a href="#resources">Resources</a>
+					</div>
+				</article>
+
+				<article class="card">
+					<img src="Algo.jpg" alt="Tree diagram of connected circles representing an algorithm">
+					<div class="card-body">
+						<h3>Algorithms &amp; Problem Solving</h3>
+						<p>Break problems into steps and compare different solutions.</p>
+						<ul class="tags">
+							<li>Intermediate</li>
+							<li>10 modules</li>
+							<li>Logic</li>
+						</ul>
+						<a href="#resources">Resources</a>
+					</div>
+				</article>
 			</div>
-			
 		</section>
 	</main>
+</div>
 
+<!-- Resources -->
+		<section id="resources">
+			<h2>Resources</h2>
 
+			<article class="guide" id="study-guides">
+				<h3>Study Guides</h3>
+				<ol>
+					<li>List every class, deadline and exam for the week.</li>
+					<li>Block two or three focused sessions per subject.</li>
+					<li>Leave one evening free so the plan survives a bad day.</li>
+					<li>Review on Sunday and adjust.</li>
+				</ol>
+			</article>
+
+			<article class="guide">
+				<h3>Core resources for first-year students</h3>
+				<ul>
+					<li> <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank" rel="noopener">MDN Learn Web Development</li>
+					<li> <a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noopener">W3Schools JavaScript tutorial</li>
+					<li> <a href="https://www.w3schools.com/sql/default.asp" target="_blank" rel="noopener">W3Schools SQL tutorial</li>
+					<li> <a href="https://git-scm.com/book/en/v2" target="_blank" rel="noopener">Pro Git book</li>
+				</ul>
+			</article>
+		</section>
+
+	<!-- Multimedia -->
+		<section id="media">
+			<h2>Watch and Listen</h2>
+			<div class="media-row">
+				<div class="media-item">
+					<h3>Video: the 4-step study loop</h3>
+					<video controls preload="metadata" width="640" height="360" poster="images/video-poster.jpg" >
+			          <source src="Study-tips.mp4" type="video/mp4">
+			          Your browser does not support the video element.
+			        </video>
+				</div>
+			</div>
+		</section>
+
+<!-- Sidebar -->
+	<aside class="sidebar" id="announcement" aria-label="Announcement and quick links">
+		<section class="side-box">
+			<h2>Announcement</h2>
+			<ul>
+				<li><strong>Week 1:</strong>Workshop folders open for upload.</li>
+				<li><strong>Week 3:</strong>Library extends opening hours before exams.</li>
+				<li><strong>Week 5:</strong>Peer study groups sign up.</li>
+			</ul>
+		</section>
+
+		<section class="side-box">
+			<h2>Quick Links</h2>
+			<ul>
+				<li><a href="#courses">All courses</li>
+				<li><a href="#resources">Study Planning</li>
+				<li><a href="#media">Video</li>
+			</ul>
+		</section>
+	</aside>
+
+	
+	<!-- Footer-->
+	<footer class="bottom" id="contact">
+		<section>
+			<h2>Study Hub</h2>
+			<p>A student learning resource platform built for the 5CS045 Full Stack Web Development Week 1 workshop.</p>
+    </section>
+
+    <section>
+      <h2>Explore</h2>
+      <ul>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#study-guides">Study guides</a></li>
+        <li><a href="#media">Watch &amp; listen</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:support@StudyHub.com">support@StudyHub.com</a></p>
+      <p>Kathmandu, Nepal</p>
+    </section>
+    <p class="copyright">&copy; 2026 StudyHub. Made with HTML and CSS only.</p>
+	</footer>
 
 </body>
 </html>
